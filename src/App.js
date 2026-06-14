@@ -18,10 +18,10 @@
 //   );
 // }
 
+import React, { useState } from "react";
+import Navbar from './FilmVault/components/Navbar.jsx'; 
 export default function App() {
   return (
-    <div className="bg-blue-500 text-white p-10 text-center text-3xl">
-      Tailwind Working 🚀
-    </div>
+    <Navbar/>
   );
 }
