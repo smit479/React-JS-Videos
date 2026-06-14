@@ -1,0 +1,35 @@
+# Step 1: Install Tailwind dependencies
+npm install -D tailwindcss postcss autoprefixer
+
+# Step 2: Check Tailwind versions
+npm list tailwindcss
+
+# If you see two versions (v3 + v4), remove v4
+npm uninstall tailwindcss
+
+# Step 3: Install Tailwind v3 explicitly
+npm install -D tailwindcss@3 postcss autoprefixer
+
+# Step 4: Verify installation
+npm list tailwindcss
+
+# Step 5: Generate config files
+npx tailwindcss init -p
+
+# Step 6: src/style.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+# Step 7: src/index.js
+import "./style.css";
+
+# Step 8: Test in App.js
+<!--export default function App() {
+    return (
+      <div className="bg-blue-500 text-white p-10 text-center text-3xl">
+        Tailwind Working 🚀
+      </div>
+    );
+  }-->
+
